@@ -15,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home', [
-        'title' => 'Startup Foodiee'
+        'title' => 'Startup Foodiee - Home'
     ]);
 });
