@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeDashboardController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home', [
-        'title' => 'Startup Foodiee - Home'
-    ]);
-});
+// Route::get('/', function () {
+//     return view('home', [
+//         'title' => 'Startup Foodiee - Home'
+//     ]);
+// });
+
+Route::get('/', [HomeDashboardController::class, 'index']);
+
+Route::get('/shop', [ProductController::class, 'index']);
