@@ -104,8 +104,8 @@
             <div class="col-lg-6">
                 <nav class="header__menu">
                     <ul>
-                        <li class="active"><a href="/">Home</a></li>
-                        <li><a href="/shop">Shop</a></li>
+                        <li class="{{ Request::is('/') ? 'active' : '' }}"><a href="/">Home</a></li>
+                        <li class="{{ Request::is('shop') ? 'active' : '' }}"><a href="/shop">Shop</a></li>
                         <li><a href="#">Pages</a>
                             <ul class="header__menu__dropdown">
                                 <li><a href="./shop-details.html">Shop Details</a></li>
