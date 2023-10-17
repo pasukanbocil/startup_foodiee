@@ -24,3 +24,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeDashboardController::class, 'index']);
 
 Route::get('/shop', [ProductController::class, 'index']);
+Route::get('/shop/detail/{id}', [ProductController::class, 'detail']);

@@ -103,7 +103,7 @@
                         </ul>
                     </div>
                     <div class="featured__item__text">
-                        <h6><a href="#">{{ $product->name_product }}</a></h6>
+                        <h6><a href="/shop/detail/{{ $product->id }}">{{ $product->name_product }}</a></h6>
                         <h5>Rp.{{ $product->price }}</h5>
                     </div>
                 </div>
