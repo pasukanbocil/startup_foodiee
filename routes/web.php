@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeDashboardController;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,3 +26,6 @@ Route::get('/', [HomeDashboardController::class, 'index']);
 
 Route::get('/shop', [ProductController::class, 'index']);
 Route::get('/shop/detail/{id}', [ProductController::class, 'detail']);
+
+
+Route::get('/login', [LoginController::class, 'index']);
