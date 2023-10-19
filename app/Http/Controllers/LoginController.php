@@ -12,4 +12,6 @@ class LoginController extends Controller
             'title' => 'Startup Foodiee - Login'
         ]);
     }
+
+    
 }

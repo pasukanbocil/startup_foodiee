@@ -12,7 +12,17 @@
                 </div>
 
                 <div class="card-body">
-                    <form method="POST" action="#" class="needs-validation" novalidate="">
+                    @if (session()->has('success'))
+                        <div class="alert alert-success alert-dismissible show fade">
+                            <div class="alert-body">
+                                <button class="close" data-dismiss="alert">
+                                    <span>&times;</span>
+                                </button>
+                                {{ session('success') }}
+                            </div>
+                        </div>
+                    @endif
+                    <form method="POST" action="/login" class="needs-validation" novalidate="">
                         <div class="form-group">
                             <label for="email">Email</label>
                             <input id="email" type="email" class="form-control" name="email" tabindex="1" required
@@ -37,15 +47,6 @@
                                 please fill in your password
                             </div>
                         </div>
-
-                        <div class="form-group">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" name="remember" class="custom-control-input" tabindex="3"
-                                    id="remember-me">
-                                <label class="custom-control-label" for="remember-me">Remember Me</label>
-                            </div>
-                        </div>
-
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
                                 Login
@@ -56,7 +57,7 @@
                 </div>
             </div>
             <div class="mt-5 text-muted text-center">
-                Don't have an account? <a href="auth-register.html">Create One</a>
+                Don't have an account? <a href="/register">Buat Akun</a>
             </div>
             <div class="simple-footer">
                 Copyright &copy; Stisla 2018

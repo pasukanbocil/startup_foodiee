@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeDashboardController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,3 +30,7 @@ Route::get('/shop/detail/{id}', [ProductController::class, 'detail']);
 
 
 Route::get('/login', [LoginController::class, 'index']);
+
+
+Route::get('/register', [RegisterController::class, 'index']);
+Route::post('/register', [RegisterController::class, 'store']);
