@@ -22,7 +22,18 @@
                             </div>
                         </div>
                     @endif
-                    <form method="POST" action="/login" class="needs-validation" novalidate="">
+                    @if (session()->has('loginError'))
+                        <div class="alert alert-danger alert-dismissible show fade">
+                            <div class="alert-body">
+                                <button class="close" data-dismiss="alert">
+                                    <span>&times;</span>
+                                </button>
+                                {{ session('loginError') }}
+                            </div>
+                        </div>
+                    @endif
+                    <form method="POST" action="/login" class="needs-validation">
+                        @csrf
                         <div class="form-group">
                             <label for="email">Email</label>
                             <input id="email" type="email" class="form-control" name="email" tabindex="1" required

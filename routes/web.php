@@ -30,7 +30,15 @@ Route::get('/shop/detail/{id}', [ProductController::class, 'detail']);
 
 
 Route::get('/login', [LoginController::class, 'index']);
+Route::post('/login', [LoginController::class, 'authenticate']);
 
 
 Route::get('/register', [RegisterController::class, 'index']);
 Route::post('/register', [RegisterController::class, 'store']);
+
+
+Route::get('/dashboard', function () {
+    return view('dashboard.index', [
+        'title' => 'Startup Foodiee - Dashboard'
+    ]);
+});
