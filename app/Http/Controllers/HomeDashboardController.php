@@ -16,4 +16,5 @@ class HomeDashboardController extends Controller
             'categories'=> Category::all()
         ]);
     }
+    
 }

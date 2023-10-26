@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeDashboardController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
@@ -42,3 +43,5 @@ Route::get('/dashboard', function () {
         'title' => 'Startup Foodiee - Dashboard'
     ]);
 });
+
+Route::get('/dashboard/food',[DashboardController::class,'food']);

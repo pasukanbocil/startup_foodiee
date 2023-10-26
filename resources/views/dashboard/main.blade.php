@@ -10,12 +10,20 @@
     <!-- General CSS Files -->
     <link rel="stylesheet" href="{{ asset('LoginAssets/modules/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('LoginAssets/modules/fontawesome/css/all.min.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <!-- CSS Libraries -->
     <link rel="stylesheet" href="{{ asset('LoginAssets/modules/jqvmap/dist/jqvmap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('LoginAssets/modules/summernote/summernote-bs4.css') }}">
     <link rel="stylesheet" href="{{ asset('LoginAssets/modules/owlcarousel2/dist/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('LoginAssets/modules/owlcarousel2/dist/owl.theme.default.min.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('LoginAssets/modules/datatables/datatables.min.css') }}">
+    <link rel="stylesheet"
+        href="{{ asset('LoginAssets/modules/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet"
+        href="{{ asset('LoginAssets/modules/datatables/Select-1.2.4/css/select.bootstrap4.min.css') }}">
+
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="{{ asset('LoginAssets/css/style.css') }}">
@@ -70,8 +78,15 @@
     <script src="{{ asset('LoginAssets/modules/summernote/summernote-bs4.js') }}"></script>
     <script src="{{ asset('LoginAssets/modules/chocolat/dist/js/jquery.chocolat.min.js') }}"></script>
 
+    <script src="{{ asset('LoginAssets/modules/datatables/datatables.min.js') }}"></script>
+    <script src="{{ asset('LoginAssets/modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js') }}">
+    </script>
+    <script src="{{ asset('LoginAssets/modules/datatables/Select-1.2.4/js/dataTables.select.min.js') }}"></script>
+    <script src="{{ asset('LoginAssets/modules/jquery-ui/jquery-ui.min.js') }}"></script>
+
     <!-- Page Specific JS File -->
     <script src="{{ asset('LoginAssets/js/page/index.js') }}"></script>
+    <script src="{{ asset('LoginAssets/js/page/modules-datatables.js') }}"></script>
 
     <!-- Template JS File -->
     <script src="{{ asset('LoginAssets/js/scripts.js') }}"></script>
