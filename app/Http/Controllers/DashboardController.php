@@ -15,4 +15,12 @@ class DashboardController extends Controller
             'products' => Product::all(),
         ]);
     }
+
+    public function create()
+    {
+        return view('dashboard.food.create', [
+            'title' => 'Startup Foodiee - Create Food',
+            'categories' => Category::all()
+        ]);
+    }
 }

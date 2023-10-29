@@ -2,13 +2,13 @@
 @section('maincontent')
     <section class="section">
         <div class="section-header">
-            <h1>DataTables</h1>
+            <h1>Data Foods&Drinks</h1>
         </div>
         <div class="row">
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Basic DataTables</h4>
+                        <a href="/dashboard/food/create" class="btn btn-primary">Tambah Foods&Drinks</a>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
