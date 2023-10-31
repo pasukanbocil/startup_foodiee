@@ -23,4 +23,9 @@ class DashboardController extends Controller
             'categories' => Category::all()
         ]);
     }
+
+    public function store(Request $request)
+    {
+        
+    }
 }

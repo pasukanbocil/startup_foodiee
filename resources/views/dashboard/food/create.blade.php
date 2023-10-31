@@ -9,23 +9,32 @@
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-6">
                     <div class="card">
-                        <form>
+                        <form action="/dashboard/food/store" method="POST" enctype="multipart/form-data">
+                            @csrf
                             <div class="card-body">
                                 <div class="form-group">
                                     <label>Name Product</label>
-                                    <input type="text" class="form-control" required="">
+                                    <input type="text" name="name_product" id="name_product" class="form-control"
+                                        required="">
                                 </div>
                                 <div class="form-group">
-                                    <label>Email</label>
-                                    <input type="email" class="form-control" required="">
+                                    <label>Description</label>
+                                    <textarea name="description" id="description" class="form-control" required=""></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <label>Subject</label>
-                                    <input type="email" class="form-control">
+                                    <label>Price</label>
+                                    <input type="text" name="price" id="price" class="form-control">
                                 </div>
                                 <div class="form-group mb-0">
-                                    <label>Message</label>
-                                    <textarea class="form-control" required=""></textarea>
+                                    <label>Stok</label>
+                                    <input class="form-control" name="stok" id="stok" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Category</label>
+                                    @foreach ( as )
+                                        
+                                    @endforeach
+                                    <select class="form-control" name="category_id" id="Category_id"></select>
                                 </div>
                             </div>
                             <div class="card-footer text-right">
