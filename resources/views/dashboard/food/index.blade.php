@@ -24,6 +24,7 @@
                                         <th>Price</th>
                                         <th>Stock</th>
                                         <th>Category</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -36,6 +37,12 @@
                                             <td>{{ $product->price }}</td>
                                             <td>{{ $product->stock }}</td>
                                             <td>{{ $product->category->category_name }}</td>
+                                            <td>
+                                                <a href="/dashboard/food/edit/{{ $product->id }}"
+                                                    class="btn btn-warning">Edit</a>
+                                                <a href="/dashboard/food/delete/{{ $product->id }}"
+                                                    class="btn btn-danger">Delete</a>
+                                            </td>
                                         </tr>
                                     @endforeach
                                 </tbody>

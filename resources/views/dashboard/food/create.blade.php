@@ -31,8 +31,8 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Category</label>
-                                    @foreach ( as )
-                                        
+                                    @foreach ($categories as $category )
+                                    
                                     @endforeach
                                     <select class="form-control" name="category_id" id="Category_id"></select>
                                 </div>
