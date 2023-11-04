@@ -13,24 +13,28 @@
                             @csrf
                             <div class="card-body">
                                 <div class="form-group">
-                                    <label>Name Product</label>
+                                    <label for="name_product">Name Product</label>
                                     <input type="text" name="name_product" id="name_product" class="form-control"
                                         required="">
                                 </div>
                                 <div class="form-group">
-                                    <label>Description</label>
+                                    <label for="description">Description</label>
                                     <textarea name="description" id="description" class="form-control" required=""></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <label>Price</label>
+                                    <label for="price">Price</label>
                                     <input type="text" name="price" id="price" class="form-control">
                                 </div>
-                                <div class="form-group mb-0">
+                                <div class="form-group">
                                     <label>Stok</label>
                                     <input class="form-control" name="stok" id="stok" required="">
                                 </div>
                                 <div class="form-group">
-                                    <label>Category</label>
+                                    <label for="image">Image</label>
+                                    <input class="form-control" type="file" name="image" id="image">
+                                </div>
+                                <div class="form-group">
+                                    <label for="category_id">Category</label>
                                     <select class="form-control" name="category_id" id="Category_id">
                                         @foreach ($categories as $category)
                                             <option value="{{ $category->id }}" selected>{{ $category->category_name }}

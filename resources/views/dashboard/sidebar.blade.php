@@ -10,7 +10,7 @@
         <li class="dropdown {{ Request::is('dashboard') ? 'active' : '' }}">
             <a href="/dashboard" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
         </li>
-        <li class="menu-header">Food</li>
+        <li class="menu-header">Master Data</li>
         <li class="dropdown {{ Request::is('dashboard/food*') ? 'active' : '' }}">
             <a href="/dashboard/food" class="nav-link"><i class="fas fa-burger"></i>
                 <span>Food</span></a>
