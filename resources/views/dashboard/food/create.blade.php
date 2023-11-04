@@ -31,10 +31,12 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Category</label>
-                                    @foreach ($categories as $category )
-                                    
-                                    @endforeach
-                                    <select class="form-control" name="category_id" id="Category_id"></select>
+                                    <select class="form-control" name="category_id" id="Category_id">
+                                        @foreach ($categories as $category)
+                                            <option value="{{ $category->id }}" selected>{{ $category->category_name }}
+                                            </option>
+                                        @endforeach
+                                    </select>
                                 </div>
                             </div>
                             <div class="card-footer text-right">
