@@ -9,42 +9,41 @@
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-6">
                     <div class="card">
-                        <form action="/dashboard/food/store" method="POST" enctype="multipart/form-data">
+                        <form action="/product" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="card-body">
                                 <div class="form-group">
                                     <label for="name_product">Name Product</label>
                                     <input type="text" name="name_product" id="name_product" class="form-control"
-                                        required="">
+                                        required>
                                 </div>
                                 <div class="form-group">
                                     <label for="description">Description</label>
-                                    <textarea name="description" id="description" class="form-control" required=""></textarea>
+                                    <textarea name="description" id="description" class="form-control" required></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label for="price">Price</label>
                                     <input type="text" name="price" id="price" class="form-control">
                                 </div>
                                 <div class="form-group">
-                                    <label>Stok</label>
-                                    <input class="form-control" name="stok" id="stok" required="">
+                                    <label for="stock">Stok</label>
+                                    <input class="form-control" name="stock" id="stock" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="image">Image</label>
-                                    <input class="form-control" type="file" name="image" id="image">
+                                    <input class="form-control" type="file" name="image" id="image" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="category_id">Category</label>
                                     <select class="form-control" name="category_id" id="Category_id">
                                         @foreach ($categories as $category)
-                                            <option value="{{ $category->id }}" selected>{{ $category->category_name }}
-                                            </option>
+                                            <option value="{{ $category->id }}">{{ $category->category_name }}</option>
                                         @endforeach
                                     </select>
                                 </div>
                             </div>
                             <div class="card-footer text-right">
-                                <button class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary">Save</button>
                             </div>
                         </form>
                     </div>

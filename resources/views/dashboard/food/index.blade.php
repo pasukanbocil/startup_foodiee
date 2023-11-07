@@ -33,7 +33,8 @@
                                             <td>{{ $loop->iteration }}</td>
                                             <td>{{ $product->name_product }}</td>
                                             <td>{{ $product->description }}</td>
-                                            <td>{{ $product->image }}</td>
+                                            <td><img src="{{ asset('storage/' . $product->image) }}"
+                                                    alt="Product Image"style="width: 250px; height: 250px;"></td>
                                             <td>{{ $product->price }}</td>
                                             <td>{{ $product->stock }}</td>
                                             <td>{{ $product->category->category_name }}</td>
