@@ -44,7 +44,6 @@
                                                 <a href="/dashboard/food/delete/{{ $product->id }}"
                                                     class="btn btn-danger">Delete</a>
                                             </td>
-                                            test edit
                                         </tr>
                                     @endforeach
                                 </tbody>
