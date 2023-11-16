@@ -4,7 +4,6 @@
         <div class="section-header">
             <h1>Edit Product Data Foods & Drinks</h1>
         </div>
-
         <div class="section-body">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-6">
