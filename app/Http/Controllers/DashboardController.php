@@ -44,4 +44,13 @@ class DashboardController extends Controller
 
         return redirect('/dashboard/food')->with('success', 'New Food has been added!');
     }
+
+    public function edit(Request $request, $id)
+    {
+        return view('dashboard.food.edit', [
+            'title' => 'Startup Foodiee - Edit Food',
+            'categories' => Category::all(),
+            'product' => Product::findOrFail($id)
+        ]);
+    }
 }

@@ -39,15 +39,14 @@
                                             <td>{{ $product->stock }}</td>
                                             <td>{{ $product->category->category_name }}</td>
                                             <td>
-                                                <a href="/dashboard/food/edit/{{ $product->id }}"
+                                                <a href="/dashboard/food/{{ $product->id }}/edit"
                                                     class="btn btn-warning">Edit</a>
-                                                <a href="/dashboard/food/delete/{{ $product->id }}"
+                                                <a href="/dashboard/food/{{ $product->id }}/delete"
                                                     class="btn btn-danger">Delete</a>
                                             </td>
                                         </tr>
                                     @endforeach
                                 </tbody>
-                                sfdss
                             </table>
                         </div>
                     </div>

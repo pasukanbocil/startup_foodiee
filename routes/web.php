@@ -47,3 +47,5 @@ Route::get('/dashboard', function () {
 Route::get('/dashboard/food', [DashboardController::class, 'food']);
 Route::get('/dashboard/food/create', [DashboardController::class, 'create']);
 Route::post('/product', [DashboardController::class, 'store']);
+Route::get('/dashboard/food/{id}/edit', [DashboardController::class, 'edit']);
+Route::put('/dashboard/food/{id}', [DashboardController::class, 'update']);
