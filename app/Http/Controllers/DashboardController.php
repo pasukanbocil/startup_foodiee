@@ -53,4 +53,9 @@ class DashboardController extends Controller
             'product' => Product::findOrFail($id)
         ]);
     }
+
+    public function update(Request $request,$id)
+    {
+        
+    }
 }
