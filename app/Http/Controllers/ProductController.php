@@ -24,10 +24,4 @@ class ProductController extends Controller
             'product' => Product::findOrFail($id),
         ]);
     }
-
-    public function update()
-    {
-
-        
-    }
 }

@@ -56,7 +56,15 @@ class DashboardController extends Controller
 
     public function update(Request $request,$id)
     {
-        //EDIT
+        // dd($request->all());
+        $validatedData = $request->validate([
+            'name_product' => 'required',
+            'description' => 'required',
+            'stock' => 'required|numeric',
+            'price' => 'required|numeric',
+            'image' => 'image|file|max:1024',
+            'category_id' => 'required'
+        ]);
 
     }
 }
